@@ -6,7 +6,7 @@ void draw() {
 	 // Draw a white background
   ellipseMode(CENTER);
   ellipse(mouseX, mouseY, 1, 1);
-  println(mouseX, mouseY);
+
 
   background(255);
   // Set CENTER mode
@@ -15,7 +15,7 @@ void draw() {
   // Draw Zoog's body
   stroke(0);
   fill(mouseX, 5, 15);
-  rect(mouseX, mouseY,40,100);
+  rect(mouseX, mouseY,25,100);
   // Draw Zoog's head
   stroke(0);
   fill(0 , mouseY, 0);
@@ -23,7 +23,6 @@ void draw() {
   fill(mouseX, mouseY, mouseX);
   stroke(0)
 
-  // remove the forward slashes in front of each line of code below one at a time. Remove the underline and replace with the proper code to allow your mouse to move Zoog around  💻
   fill(mouseX,mouseY, 50)
   ellipse(mouseX -10,mouseY -30,16,32);
   ellipse(mouseX +10,mouseY -30,16,32);
@@ -31,4 +30,7 @@ void draw() {
   stroke(0);
     line(mouseX -10, mouseY +50, mouseX -20, mouseY +70);
     line(mouseX +10, mouseY +50, mouseX +20, mouseY +70);
+   }
+   void mousePressed(){
+     println(" Take Me To Your Leader");
    }
